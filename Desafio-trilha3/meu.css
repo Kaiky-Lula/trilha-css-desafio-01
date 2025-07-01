@@ -1,0 +1,149 @@
+body{
+    background-color: black  ;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.banner-content h1{
+font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+     
+}
+
+.banner-content p{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.logo {
+     display: flex; /*essas duas primeiras propriedades deixam a imagem no centro. */
+    justify-content: center; 
+    margin-top: 70px; 
+    
+}
+
+.banner-content button{
+    border: 3px solid #1472B7;
+    font-size: 20px;
+   display: block; /*essa propriedade e a debaixo centralizam o botão*/
+   margin: auto;
+    letter-spacing: 4px; /*isso define o espaço entre cada letra.*/
+    padding: 15px ; /*esse padding que coloca-se dois numeros dá o espaço no topo e na base,*/
+ background: -webkit-linear-gradient(#33A8DB, #1472B7); /*aqui é o degradê*/
+    background-clip: text; /*quero que o fundo apareça somente dentro das letras do texto
+    */
+    -webkit-background-clip: text;
+     color: transparent;
+     font-weight: bolder;
+     text-transform: uppercase; 
+}
+
+.banner {
+ background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url(imagens/banner.png);
+padding-top: 2px;
+border-bottom: 2px solid #33A8DB; /*isso faz uma linha horzontal*/
+}
+
+main{
+    margin-top: 80px;
+    color:black ;
+}
+
+h2{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+        background: -webkit-linear-gradient(#33A8DB, #1472B7); /*para deixar o texto com fundo degradê, utiliza-se essas propriedades (até o color) */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p{
+    text-align: center;
+    color: white ;
+    margin-bottom: 50px;
+}
+
+.modules-list{
+    text-align: center;
+     margin-bottom: 100px;
+}
+
+ .module{
+    color: white;
+   width: 530px; /*largura do botao */
+   margin: 0 auto 24px;  /*- 0 → margem superior (top) é zero
+- auto → margem direita e esquerda (lados) automáticas (isso centraliza horizontalmente, se o elemento tiver uma largura definida!) 
+- 24px → margem inferior (bottom) de 24 pixels*/
+
+  border: 1px solid #33A8DB;
+   background-color: #252525; /*fundo do botao */
+   padding: 16px; /*espaçamento dentro do botao */
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+.module span{
+    color: #1472B7;
+}
+
+    #course-content{
+       border-bottom: 2px solid #1472B7;
+    }
+
+    #transform-world{
+     height: 560px;
+ background-size: cover;   /*Use cover quando você quiser que o fundo fique sempre cheio e bonito, mesmo em telas grandes. Só lembre que ele pode cortar um pedacinho da imagem se for necessário pra manter tudo proporcional. */
+
+  background-image: url(imagens/woman-code.png);
+  background-attachment: fixed;  /*Ela serve para fixar a imagem de fundo no lugar, mesmo quando você rola a página. Isso cria um efeito de parallax, onde o conteúdo se move, mas o fundo continua “parado”. */
+
+  border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+  padding: 200px;
+    }
+
+    #transform-world p{
+       color: white;
+       text-align: left;
+       font-size: 60px;
+       text-shadow: 2px 2px 5px #33A8DB;   /* - 2px → desloca a sombra pra direita
+- 2px → desloca a sombra pra baixo
+- 5px → aplica um desfoque
+- red → define a cor da sombra */
+    }
+
+    #professional-challenges h2{
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+    #professional-challenges img{
+       display: block;   /*- Quando você coloca display: block;, a imagem pode ser centralizada com margin: auto; e não fica grudada em outros elementos ao lado */
+  margin: 0 auto;
+    }
+
+    #professional-challenges{
+        border-bottom: 2px solid #1472B7;
+    }
+
+    footer img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #1472B7;
+        font-weight: bolder;
+    }
